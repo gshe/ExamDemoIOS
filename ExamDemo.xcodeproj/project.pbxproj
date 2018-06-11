@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -193,22 +193,22 @@
 		5ADB10B620CACAC7006DDD3E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = CMRead;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = cmcc;
 				TargetAttributes = {
 					5ADB10BD20CACAC7006DDD3E = {
-						CreatedOnToolsVersion = 9.4;
+						CreatedOnToolsVersion = 9.2;
 					};
 					5ADB10CB20CACC42006DDD3E = {
-						CreatedOnToolsVersion = 9.4;
+						CreatedOnToolsVersion = 9.2;
 					};
 					5ADB10DC20CACF08006DDD3E = {
-						CreatedOnToolsVersion = 9.4;
+						CreatedOnToolsVersion = 9.2;
 					};
 				};
 			};
 			buildConfigurationList = 5ADB10B920CACAC7006DDD3E /* Build configuration list for PBXProject "ExamDemo" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -330,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -382,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
