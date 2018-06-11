@@ -22,5 +22,5 @@
 -(int)deleteTask:(int)taskId;
 
 -(int)scheduleTask:(int)taskId;
--(int)queryTaskStatus:(NSArray<TaskInfo *> *)tasks;
+-(int)queryTaskStatus:(NSMutableArray<TaskInfo *> *)tasks;
 @end

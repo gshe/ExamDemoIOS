@@ -33,7 +33,7 @@
     return 0;
 }
 
--(int)queryTaskStatus:(NSArray<TaskInfo *> *)tasks{
+-(int)queryTaskStatus:(NSMutableArray<TaskInfo *> *)tasks{
     return 0;
 }
 @end
