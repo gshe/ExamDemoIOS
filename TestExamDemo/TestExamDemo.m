@@ -86,7 +86,7 @@
 {
     int actual = [self.schedule clean];
     actual = [self.schedule registerNode:1];
-    actual = [self.schedule addTask:1 withData:10];
+    actual = [self.schedule addTask:1 withConsumption:10];
     XCTAssertEqual(kE008, actual);
 }
 
@@ -94,7 +94,7 @@
 {
     int actual = [self.schedule clean];
     actual = [self.schedule registerNode:1];
-    actual = [self.schedule addTask:0 withData:10];
+    actual = [self.schedule addTask:0 withConsumption:10];
     XCTAssertEqual(kE009, actual);
 }
 
@@ -102,8 +102,8 @@
 {
     int actual = [self.schedule clean];
     actual = [self.schedule registerNode:1];
-    actual = [self.schedule addTask:1 withData:10];
-    actual = [self.schedule addTask:1 withData:10];
+    actual = [self.schedule addTask:1 withConsumption:10];
+    actual = [self.schedule addTask:1 withConsumption:10];
     XCTAssertEqual(kE010, actual);
 }
 
@@ -111,7 +111,7 @@
 {
     int actual = [self.schedule clean];
     actual = [self.schedule registerNode:1];
-    actual = [self.schedule addTask:1 withData:10];
+    actual = [self.schedule addTask:1 withConsumption:10];
     actual = [self.schedule deleteTask:1];
     XCTAssertEqual(kE011, actual);
 }
@@ -120,7 +120,7 @@
 {
     int actual = [self.schedule clean];
     actual = [self.schedule registerNode:1];
-    actual = [self.schedule addTask:1 withData:10];
+    actual = [self.schedule addTask:1 withConsumption:10];
     actual = [self.schedule deleteTask:2];
     XCTAssertEqual(kE012, actual);
 }
@@ -132,13 +132,13 @@
     actual = [self.schedule registerNode:1];
     actual = [self.schedule registerNode:6];
     
-    [self.schedule addTask:1 withData:2];
-    [self.schedule addTask:2 withData:14];
-    [self.schedule addTask:3 withData:4];
-    [self.schedule addTask:4 withData:16];
-    [self.schedule addTask:5 withData:6];
-    [self.schedule addTask:6 withData:5];
-    [self.schedule addTask:7 withData:3];
+    [self.schedule addTask:1 withConsumption:2];
+    [self.schedule addTask:2 withConsumption:14];
+    [self.schedule addTask:3 withConsumption:4];
+    [self.schedule addTask:4 withConsumption:16];
+    [self.schedule addTask:5 withConsumption:6];
+    [self.schedule addTask:6 withConsumption:5];
+    [self.schedule addTask:7 withConsumption:3];
     
     actual = [self.schedule scheduleTask:10];
     XCTAssertEqual(kE013, actual);
@@ -164,10 +164,10 @@
     actual = [self.schedule registerNode:1];
     actual = [self.schedule registerNode:3];
     
-    actual = [self.schedule addTask:1 withData:30];
-    actual = [self.schedule addTask:2 withData:30];
-    actual = [self.schedule addTask:3 withData:30];
-    actual = [self.schedule addTask:4 withData:30];
+    actual = [self.schedule addTask:1 withConsumption:30];
+    actual = [self.schedule addTask:2 withConsumption:30];
+    actual = [self.schedule addTask:3 withConsumption:30];
+    actual = [self.schedule addTask:4 withConsumption:30];
     
     actual = [self.schedule scheduleTask:10];
     
@@ -189,18 +189,19 @@
 - (void) testScheduleTask3
 {
     int actual = [self.schedule clean];
-    actual = [self.schedule registerNode:1];
-    actual = [self.schedule registerNode:2];
+    [self.schedule registerNode:1];
+    [self.schedule registerNode:2];
     
-    actual = [self.schedule addTask:1 withData:15];
-    actual = [self.schedule addTask:2 withData:10];
-    actual = [self.schedule addTask:3 withData:30];
-    actual = [self.schedule addTask:4 withData:35];
-    actual = [self.schedule addTask:5 withData:125];
-    actual = [self.schedule addTask:6 withData:115];
+    [self.schedule addTask:1 withConsumption:15];
+    [self.schedule addTask:2 withConsumption:10];
+    [self.schedule addTask:3 withConsumption:30];
+    [self.schedule addTask:4 withConsumption:35];
+    [self.schedule addTask:5 withConsumption:125];
+    [self.schedule addTask:6 withConsumption:115];
     
     actual = [self.schedule scheduleTask:10];
     [self.schedule deleteTask:5];
+    
     actual = [self.schedule scheduleTask:10];
     XCTAssertEqual(kE014, actual);
     

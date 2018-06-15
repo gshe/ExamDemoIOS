@@ -21,7 +21,7 @@
     return 0;
 }
 
--(int)addTask:(int)taskId withData:(int) data{
+-(int)addTask:(int)taskId withConsumption:(int)consumption{
     return 0;
 }
 
@@ -29,7 +29,7 @@
     return 0;
 }
 
--(int)scheduleTask:(int)taskId{
+-(int)scheduleTask:(int)threshold{
     return 0;
 }
 

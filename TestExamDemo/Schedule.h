@@ -7,20 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface TaskInfo : NSObject
-@property (nonatomic, assign) int taskId;
-@property (nonatomic, assign) int nodeId;
-@end
+#import "TaskInfo.h"
 
 @interface Schedule : NSObject
 -(int)clean;
 -(int)registerNode:(int)nodeId;
 -(int)unregisterNode:(int)nodeId;
 
--(int)addTask:(int)taskId withData:(int) data;
+-(int)addTask:(int)taskId withConsumption:(int)consumption;
 -(int)deleteTask:(int)taskId;
 
--(int)scheduleTask:(int)taskId;
+-(int)scheduleTask:(int)threshold;
 -(int)queryTaskStatus:(NSMutableArray<TaskInfo *> *)tasks;
 @end

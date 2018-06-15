@@ -8,20 +8,21 @@
 
 #ifndef ReturnCodeKeys_h
 #define ReturnCodeKeys_h
-
-const static int kE001 = 0;
-const static int kE002 = 0;
-const static int kE003 = 0;
-const static int kE004 = 0;
-const static int kE005 = 0;
-const static int kE006 = 0;
-const static int kE007 = 0;
-const static int kE008 = 0;
-const static int kE009 = 0;
-const static int kE010 = 0;
-const static int kE011 = 0;
-const static int kE012 = 0;
-const static int kE013 = 0;
-const static int kE014 = 0;
-const static int kE015 = 0;
+const static int kE000 = 0;
+const static int kE001 = 1;
+const static int kE002 = 2;
+const static int kE003 = 3;
+const static int kE004 = 4;
+const static int kE005 = 5;
+const static int kE006 = 6;
+const static int kE007 = 7;
+const static int kE008 = 8;
+const static int kE009 = 9;
+const static int kE010 = 10;
+const static int kE011 = 11;
+const static int kE012 = 12;
+const static int kE013 = 13;
+const static int kE014 = 14;
+const static int kE015 = 15;
+const static int kE016 = 16;
 #endif /* ReturnCodeKeys_h */
